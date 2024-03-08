@@ -1,0 +1,364 @@
+/*! Navigation Styling */
+.attribute {
+  left: 50%;
+  bottom: 0;
+  position: fixed;
+  color: var(--text-ash-color);
+  transform: translate(-50%, -50%);
+}
+.wrapper {
+  min-height: 100vh;
+}
+nav {
+  width: 100%;
+  display: flex;
+  padding: 25px 50px;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+}
+nav > h1 {
+  font-size: 1.4rem;
+}
+nav > div {
+  display: flex;
+  column-gap: 8px;
+  cursor: pointer;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+nav > div > div > img {
+  width: 16px;
+  padding-top: 3px;
+}
+input {
+  height: 35px;
+  padding: 0 8px;
+  outline: none;
+}
+button {
+  width: 70px;
+  height: 35px;
+}
+/** Navigation dark mode */
+.navLightBg {
+  background-color: var(--nav-light-bg);
+  box-shadow: -5px 5px 7px rgb(222, 221, 221);
+}
+.navDarkBg {
+  background-color: var(--nav-dark-bg);
+  box-shadow: -5px 5px 7px #192027;
+}
+/*! Body Styling */
+section {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 50px 35px 50px;
+}
+section > div {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section > div > div > input {
+  width: 380px;
+  height: 53px;
+  border: none;
+  padding-bottom: 1.5px;
+  border-radius: 0 5px 5px 0;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+}
+section > div > div > input::placeholder {
+  font-size: 0.85rem;
+}
+section > div > div > button {
+  width: 70px;
+  height: 53px;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 0 0 5px;
+}
+section > div > div > button > img {
+  width: 18px;
+}
+.selectCountry {
+  height: 100%;
+  width: 185px;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 0.7rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.selectCountry > p {
+  font-size: 0.9rem;
+}
+.selectCountry > img {
+  width: 13px;
+  height: fit-content;
+}
+.selectCountry > ul {
+  left: 0;
+  top: 60px;
+  width: 100%;
+  row-gap: 8px;
+  display: flex;
+  border-radius: 5px;
+  padding: 16px 20px;
+  position: absolute;
+  height: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.selectCountry > ul > li {
+  width: 100%;
+  list-style: none;
+  font-size: 0.9rem;
+}
+.selectCountry > ul > li:hover {
+  color: var(--text-ash-color);
+}
+.filterOff ul {
+  display: none;
+}
+.filterOn ul {
+  display: flex;
+}
+
+/** Allcountries */
+.Allcountries {
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+  height: fit-content;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.Allcountries > div {
+  width: 300px;
+  height: 385px;
+  display: flex;
+  row-gap: 4px;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Allcountries > div > img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 30px;
+  border-radius: 8px 8px 0 0;
+  background-color: white;
+}
+.Allcountries > div > h1 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.Allcountries > div > p {
+  font-size: 0.95rem;
+  font-family: "Nunito-Sans-regular";
+}
+.Allcountries > div > p > span {
+  color: rgb(171, 171, 171);
+  font-family: "Nunito-Sans-light";
+}
+.Allcountries > div > h1,
+.Allcountries > div > p {
+  padding-left: 15px;
+}
+.blackText {
+  color: #101213;
+}
+.lightText {
+  color: #ffffff;
+}
+
+/** Body dark mode */
+.mainLightBg {
+  background-color: var(--main-light-bg);
+}
+.mainDarkBg {
+  background-color: var(--main-dark-bg);
+}
+.inputBtnLightBg {
+  color: var(--text-dark-color);
+  background-color: var(--nav-light-bg);
+  box-shadow: 10px 5px 7px rgb(222, 221, 221);
+}
+.buttonBtnLightBg {
+  color: var(--text-dark-color);
+  background-color: var(--nav-light-bg);
+  box-shadow: -10px 5px 7px rgb(222, 221, 221);
+}
+.inputBtnLightBg::placeholder {
+  color: var(--text-ash-color);
+}
+.inputBtnDarkBg {
+  color: var(--text-light-color);
+  background-color: var(--nav-dark-bg);
+  box-shadow: 5px 4px 5px #192027;
+}
+.inputBtnDarkBg::placeholder {
+  color: var(--text-ash-color);
+}
+.textLightBg {
+  color: var(--text-light-color);
+}
+.textDarkBg {
+  color: var(--text-dark-color);
+}
+.SelectLightBg {
+  background-color: var(--nav-light-bg);
+  box-shadow: -5px 5px 10px rgb(222, 221, 221);
+}
+.SelectDarkBg {
+  background-color: var(--nav-dark-bg);
+}
+
+@media (max-width: 720px) {
+  nav {
+    padding: 25px 30px;
+  }
+  section {
+    padding: 50px 30px 35px 30px;
+  }
+  .Allcountries {
+    padding: 20px 30px;
+  }
+  section > div > div {
+    width: 68%;
+  }
+  .selectCountry {
+    width: 30%;
+  }
+  section > div > div > input {
+    width: 85%;
+  }
+  section > div > div > button {
+    width: 15%;
+  }
+}
+@media (max-width: 580px) {
+  nav > h1 {
+    font-size: 1.1rem;
+  }
+  nav p {
+    font-size: 0.95rem;
+  }
+  .selectCountry {
+    font-size: 0.8rem;
+  }
+  .selectCountry p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 480px) {
+  nav > h1 {
+    font-size: 1.05rem;
+  }
+  nav p {
+    display: none;
+  }
+  nav {
+    padding: 0 20px;
+  }
+  section {
+    height: fit-content;
+    padding: 50px 20px 35px 20px;
+  }
+  .Allcountries {
+    padding: 20px 20px;
+  }
+  section > div {
+    row-gap: 25px;
+    height: fit-content;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .selectCountry {
+    width: 60%;
+    height: 53px;
+  }
+  .selectCountry p {
+    font-size: 0.85rem;
+  }
+  section > div > div {
+    width: 100%;
+  }
+  section > div > div > input {
+    width: 80%;
+  }
+  section > div > div > button {
+    width: 20%;
+  }
+}
+@media (max-width: 350px) {
+  .Allcountries {
+    padding: 20px 20px;
+  }
+  .Allcountries > div {
+    width: 100%;
+    height: 315px;
+    row-gap: 3px;
+  }
+  .Allcountries > div > img {
+    height: 180px;
+  }
+  .Allcountries > div > h1 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .Allcountries > div > p {
+    font-size: 0.85rem;
+  }
+  .Allcountries > div > img {
+    height: 140px;
+    margin-bottom: 18px;
+  }
+  .selectCountry {
+    width: 100%;
+  }
+}
+@media (max-width: 280px) {
+  nav > h1 {
+    font-size: 0.9rem;
+  }
+  .selectCountry {
+    width: 100%;
+  }
+  nav {
+    padding: 20px 10px;
+  }
+  section {
+    height: fit-content;
+    padding: 50px 10px 35px 10px;
+  }
+  section > div > div {
+    width: 100%;
+  }
+}
